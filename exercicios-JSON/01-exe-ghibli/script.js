@@ -26,6 +26,27 @@ const jsonDeFilmes = [
 //Apresente no console cada um dos atributos desse JS
 // COMEÇA O EXERCÍCIO
 
+for(i=0; i<jsonDeFilmes.length; i++){
+  let filme = jsonDeFilmes[i]
+  console.log(`O título do filme é  ${filme.title} e a descrição é: ${filme.description}`);
+}
+
+
+for(let item of jsonDeFilmes){
+  console.log("------------------------------")
+  console.log(item.title)
+  console.log(item.description)
+  console.log("------------------------------")
+}
+
+console.log("----------------------------------")
+
+for (let filme of jsonDeFilmes){
+  console.log("------------------------------")
+  console.log("Titulo:",filme.title)
+  console.log("Titulo:",filme.description)
+  console.log("------------------------------")
+}
 
 
   

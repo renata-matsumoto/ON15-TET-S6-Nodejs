@@ -5732,3 +5732,24 @@ const estados = [
         ]
       }
     ]
+
+
+    function buscar(cidade) {
+      const encontrarCidades = estados.filter(({sigla}) => sigla == cidade);
+
+      for(let i of encontrarCidades) {
+       let municipio = i.cidades
+
+  
+        // console.log(municipio)
+
+        for(let j of municipio){
+          console.log(j)
+        }
+    }
+
+      
+    }
+    buscar("AC");
+    console.log("----------------------------")
+    buscar("TO");
